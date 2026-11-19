@@ -1,0 +1,6 @@
+{
+  "name": "SOLSTICE — An Architecture of Light",
+  "description": "A museum-grade interactive 3D WebGL architectural sanctuary of poured travertine concrete, dynamic solar god rays, an obsidian mirror pool with interactive caustics, and suspended crystal prisms.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

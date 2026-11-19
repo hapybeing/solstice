@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-editorial: "Cinzel", "Cormorant Garamond", "Didot", "Bodoni MT", "Palatino Linotype", "Garamond", Georgia, serif;
+    --font-telemetry: "SF Mono", "JetBrains Mono", "IBM Plex Mono", "Menlo", "Consolas", ui-monospace, monospace;
+    --stone-obsidian: #0b0a09;
+    --stone-limestone: #ebe6de;
+    --stone-muted: #9e968a;
+    --stone-amber: #d4b282;
+  }
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--stone-obsidian);
+    color: var(--stone-limestone);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.font-editorial {
+  font-family: var(--font-editorial);
+}
+
+.font-telemetry {
+  font-family: var(--font-telemetry);
+  font-variant-numeric: tabular-nums;
+}
+
+.solstice-vignette {
+  background: radial-gradient(
+    ellipse 82% 78% at 50% 48%,
+    rgba(0, 0, 0, 0) 48%,
+    rgba(7, 6, 5, 0.32) 78%,
+    rgba(4, 3, 3, 0.72) 100%
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
